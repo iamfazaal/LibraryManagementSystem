@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a routerLink="/" class="navbar-brand">Library Management System</a>
+        </div>
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+
+                <li routerLinkActive="active"><a routerLink="/add-book">Add Book</a></li>
+                <li routerLinkActive="active"><a routerLink="/add-dvd">Add DVD</a></li>
+                <li routerLinkActive="active"><a routerLink="/delete-item">Delete Item</a></li>
+                <li routerLinkActive="active"><a routerLink="/display-book">Display Book</a></li>
+                <li routerLinkActive="active"><a routerLink="/display-dvd">Display DVD</a></li>
+                <li routerLinkActive="active"><a routerLink="/borrow-item">Borrow Item</a></li>
+                <li routerLinkActive="active"><a routerLink="/return-item">Return Item</a></li>
+                <li routerLinkActive="active"><a routerLink="/generate-report">Generate Report</a></li>
+            </ul>
+            <ul class="nav navbar-nav ">
+                <input class="form-control" type="text" placeholder="ISBN Number" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </ul>
+        </div>
+
+    </div>
+
+</nav>

@@ -1,0 +1,34 @@
+<div id='dvd' class="col-md-6 dvd-container">
+<h2 class="text-center">Delete Items</h2>
+
+
+<div *ngIf="message === 'ItemDeleted'" class="alert alert-success">
+  Item Deleted. Successful.!
+</div>
+
+<div *ngIf="message === 'IsbnNotAvailable'" class="alert alert-info">
+  ISBN not Available.! Try again.
+</div>
+
+<div *ngIf="message === 'IsbnIncorrect'" class="alert alert-danger">
+  ISBN Not Valid.. Check the ISBN and fill it again.!
+</div>
+
+<!-- <form class="deleteItem ">
+<div class="form-group">
+<label for ="isbn_delete">ISBN Number</label>
+<input type="text" placeholder="ISBN Number" class="form-control" [(ngModel)]="isbn_delete">
+</div> -->
+
+<form class="deleteItem ">
+  <div class="form-group">
+    <label for="isbn_delete">ISBN:</label>
+    <input type="number" placeholder="ISBN Number" [(ngModel)]="isbn_delete" name="isbn_delete" class="form-control" id="isbn_delete">
+  </div>
+
+
+<div class="form-group">
+<button class="btn btn-success" (click)="deleteItem()">Delete Item</button>
+</div>
+</form>
+</div>

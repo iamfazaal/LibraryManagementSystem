@@ -1,0 +1,59 @@
+<div class="col-md-6 dvd-container">
+  <h2 class="text-center">Borrow Items</h2>
+
+  <hr>
+
+  <div *ngIf="message === 'BorrowedItem'" class="alert alert-success">
+    Borrowed Item. Successful.!
+  </div>
+
+  <div *ngIf="message === 'IsbnNotAvailable'" class="alert alert-danger">
+    ISBN or Item not Available.! Try again.
+  </div>
+
+  <div *ngIf="message === 'ReaderNotAvailable'" class="alert alert-info">
+    Reader not Available.!
+  </div>
+
+  <div *ngIf="message === 'IsbnReaderNotAvailable'" class="alert alert-info">
+    ISBN and Reader not Available.!
+  </div>
+
+  <div *ngIf="message === 'ItemReaderNotAvailable'" class="alert alert-info">
+    Item and Reader not Available.!
+  </div>
+
+  <div class="form-group">
+    <label>ISBN Number</label>
+    <input type="text" placeholder="ISBN Number" class="form-control" [(ngModel)]="isbn_borrow">
+  </div>
+
+  <div class="form-group">
+    <label>Reader Name</label>
+    <input type="text" placeholder="Reader Name" class="form-control" [(ngModel)]="reader_name">
+  </div>
+
+  <hr>
+  <button class="btn btn-success" (click)="borrowItem()">Borrow Item</button>
+  <hr>
+
+
+  <h2>Add Reader</h2>
+  <hr>
+
+  <div *ngIf="message === 'AddReader'" class="alert alert-success">
+    Add Reader. Successful.!
+  </div>
+
+  <div *ngIf="message === 'ReaderAvailable'" class="alert alert-info">
+    Reader Available.! Try again.
+  </div>
+
+  <div class="form-group">
+    <label>Reader Name</label>
+    <input type="text" placeholder="Reader Name" class="form-control" [(ngModel)]="reader_name">
+  </div>
+
+  <hr>
+  <button class="btn btn-success" (click)="addReader()">Add Reader</button>
+  <hr>

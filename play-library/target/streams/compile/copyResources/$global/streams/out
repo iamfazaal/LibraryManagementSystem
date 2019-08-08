@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\application.conf,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\evolutions,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\evolutions)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\evolutions\default,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\evolutions\default)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\evolutions\default\1.sql,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\evolutions\default\1.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\logback.xml,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\conf\routes,D:\University Stuffs\Level 5\Semister 1\OOP\CourseWork\play-library\target\scala-2.12\classes\routes)[0m

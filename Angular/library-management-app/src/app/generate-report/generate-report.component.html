@@ -1,0 +1,26 @@
+<h2>Report</h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Reader Name</th>
+    <th>Borrow Date</th>
+    <th>Return Date</th>
+    <th>Days</th>
+    <th>Fee </th>
+  </tr>
+  </thead>
+
+  <tbody *ngFor="let item of reportdata">
+  <tr class="active">
+    <td>{{ item.isbn }}</td>
+    <td>{{ item.itemName }}</td>
+    <td>{{ item.readerName }}</td>
+    <td>{{ item.borrowDate }}</td>
+    <td>{{ item.returnDate }}</td>
+    <td>{{ item.days }}</td>
+    <td>{{ "£" + item.fee }}</td>
+  </tr>
+  </tbody>
+</table>

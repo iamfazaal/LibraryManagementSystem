@@ -1,0 +1,65 @@
+<div id='book' class="col-md-6 dvd-container">
+  <h2 class="text-center">Add Book</h2>
+
+  <div *ngIf="message === 'AddBook'" class="alert alert-success">
+    Book Added !
+  </div>
+
+  <div *ngIf="message === 'BIsbnNotValid'" class="alert alert-danger">
+    ISBN Not Valid.. .!
+  </div>
+
+  <div *ngIf="message === 'BookFull'" class="alert alert-info">
+    Space Not Available.!
+  </div>
+
+  <div *ngIf="message === 'BookIsbnAvailable'" class="alert alert-info">
+    ISBN Available. Try again.!
+  </div>
+
+
+  <form class="addbookForm ">
+    <div class="form-group">
+      <label for="isbnbook">ISBN:</label>
+      <input type="number" placeholder="Book ISBN" name="isbnbook" class="form-control" [(ngModel)]="isbnbook" id="isbnbook">
+    </div>
+
+    <div class="form-group">
+      <label for="titlebook">TITLE:</label>
+      <input type="text" placeholder="Title of the Book" name="titlebook" [(ngModel)]="titlebook" class="form-control"
+        id="titlebook">
+    </div>
+
+    <div class="form-group">
+      <label for="booksector">SECTOR:</label>
+      <input type="text" placeholder="Sector" name="booksector" [(ngModel)]="booksector" class="form-control" id="booksector">
+    </div>
+
+    <div class="form-group">
+      <label for="bookpublisherDate">PUBLISHER DATE:</label>
+      <input type="date" placeholder="Book Publised Date" name="bookpublisherDate" [(ngModel)]="bookpublisherDate"
+        class="form-control" id="bookpublisherDate">
+    </div>
+
+    <div class="form-group">
+      <label for="bookauthor">AUTHOR:</label>
+      <input type="text" placeholder="Author of the Book" name="bookauthor" [(ngModel)]="bookauthor" class="form-control"
+        id="bookauthor">
+    </div>
+
+    <div class="form-group">
+      <label for="bookpublishername">PUBLISHER NAME:</label>
+      <input type="text" placeholder="Name of the Publisher" name="bookpublishername" [(ngModel)]="bookpublishername"
+        class="form-control" id="bookpublishername">
+    </div>
+
+    <div class="form-group">
+      <label for="pages">PAGES:</label>
+      <input type="number" placeholder="Pages" name="pages" [(ngModel)]="pages" class="form-control" id="pages">
+    </div>
+
+    <div class="form-group">
+      <button id="book" class="btn btn-success" type="submit" (click)="AddBook()">Add Books</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,31 @@
+<h2 class="text-center">Books</h2>
+<hr>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Isbn Number</th>
+      <th>Title</th>
+      <th>Sector</th>
+      <th>Published Date</th>
+      <th>Borrow Date</th>
+      <th>Reader</th>
+      <th>Author</th>
+      <th>Publisher</th>
+      <th>Pages</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of book">
+    <tr class="info">
+      <td>{{item.isbn}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.sector}}</td>
+      <td>{{item.publicationDate}}</td>
+      <td>{{item.borrowedDate}}</td>
+      <td>{{item.readerName.readerName}}</td>
+      <td>{{item.authors[0].authorName}}</td>
+      <td>{{item.publisher}}</td>
+      <td>{{item.totalnoPages}}</td>
+    </tr>
+  </tbody>
+</table>

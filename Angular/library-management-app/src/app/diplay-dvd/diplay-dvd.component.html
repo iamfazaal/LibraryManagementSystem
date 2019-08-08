@@ -1,0 +1,31 @@
+<h2 style="margin: auto">DVD</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>IsbnNumber</th>
+      <th>Title</th>
+      <th>Sector</th>
+      <th>PublishedDate</th>
+      <th>Borrow Date</th>
+      <th>Reader</th>
+      <th>Language</th>
+      <th>Subtitile</th>
+      <th>Producer</th>
+      <th>Actor</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of dvds">
+    <tr class="info">
+      <td>{{item.isbn}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.sector}}</td>
+      <td>{{item.publicationDate}}</td>
+      <td>{{item.borrowedDate}}</td>
+      <td>{{item.readerName.readerName}}</td>
+      <td>{{item.avail_languages}}</td>
+      <td>{{item.avail_subtitiles}}</td>
+      <td>{{item.producer}}</td>
+      <td>{{item.actors.actorName}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,69 @@
+<div id='dvd' class="col-md-6 dvd-container">
+  <h2 class="text-center">Add DVD</h2>
+
+ 
+  <div *ngIf="message === 'AddDvd'" class="alert alert-success">
+    Add DVD. Successful.!
+  </div>
+  
+  <div *ngIf="message === 'DvdIsbnNotValid'" class="alert alert-danger">
+    ISBN Not Valid.. Check the ISBN and fill it again.!
+  </div>
+  
+  <div *ngIf="message === 'DvdFull'" class="alert alert-info">
+    Space Not Available.!
+  </div>
+  
+  <div *ngIf="message === 'DvdIsbnAvailable'" class="alert alert-info">
+    ISBN Available. Try again.!
+  </div>
+
+
+
+  <form class="adddvdForm ">
+    <div class="form-group">
+      <label for="isbndvd">ISBN:</label>
+      <input type="number" placeholder="DVD ISBN" [(ngModel)]="isbndvd" name="isbndvd" class="form-control" id="isbndvd">
+    </div>
+
+    <div class="form-group">
+      <label for="titledvd">TITLE:</label>
+      <input type="text" placeholder="Title of the DVD" [(ngModel)]="titledvd" name="titledvd" class="form-control" id="titledvd">
+    </div>
+
+    <div class="form-group">
+      <label for="dvdsector">SECTOR:</label>
+      <input type="text" placeholder="Sector" [(ngModel)]="dvdsector" name="dvdsector" class="form-control" id="dvdsector">
+    </div>
+
+    <div class="form-group">
+      <label for="dvdpublisherDate">PUBLISHER DATE:</label>
+      <input type="date" placeholder="DVD Published Date" [(ngModel)]="dvdpublisherDate" name="dvdpublisherDate" class="form-control"
+        id="dvdpublisherDate">
+    </div>
+
+    <div class="form-group">
+      <label for="dvdlanguages">LANGUAGE:</label>
+      <input type="text" placeholder="Languages of the dvd" [(ngModel)]="dvdlanguages" name="dvdlanguages" class="form-control"
+        id="dvdlanguages">
+    </div>
+
+    <div class="form-group">
+      <label for="dvdsubtitles">SUBTITLE:</label>
+      <input type="text" placeholder="Subtitle" [(ngModel)]="dvdsubtitles" name="dvdsubtitles" class="form-control"
+        id="dvdsubtitles">
+    </div>
+    <div class="form-group">
+      <label for="dvdproducer">PRODUCER:</label>
+      <input type="text" placeholder="Producer" [(ngModel)]="dvdproducer" name="dvdproducer" class="form-control" id="dvdproducer">
+    </div>
+    <div class="form-group">
+      <label for="dvdactors">ACTORS:</label>
+      <input type="text" placeholder="Actors" [(ngModel)]="dvdactors" name="dvdactors" class="form-control" id="dvdactors">
+    </div>
+    <div class="form-group">
+    <button id="dvd" class="btn btn-success" type="submit" (click)="AddDVD()">Add dvd</button>
+  </div>
+  </form>
+
+</div>

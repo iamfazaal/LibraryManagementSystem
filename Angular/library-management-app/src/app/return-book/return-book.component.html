@@ -1,0 +1,26 @@
+<div class="col-md-6 dvd-container">
+<h2 class="text-center">Return Items</h2>
+<hr>
+
+<div *ngIf="message === '0.0'" class="alert alert-danger">
+  Returned Item. Successful.!
+</div>
+
+<div *ngIf="message_dublicate" class="alert alert-danger">
+  Returned Item. but you have to pay £ {{ message + "     "}}
+  <button class="btn btn-warning" (click)="refereshPage()">Paid</button>
+</div>
+
+<div *ngIf="message === 'IsbnNotAvailable'" class="alert alert-danger">
+  ISBN not Available or Item Available.!
+</div>
+
+<div class="form-group">
+<label>ISBN Number</label>
+<input type="text" placeholder="ISBN Number" class="form-control" [(ngModel)]="isbn_return">
+</div>
+
+<hr>
+<button class="btn btn-success" (click)="returnItem()">Return Item</button>
+<hr>
+</div>
